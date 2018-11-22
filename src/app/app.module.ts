@@ -15,6 +15,14 @@ import { VehiclesPage } from '../pages/MainTabs/vehicles/vehicles';
 import { DriversPage } from '../pages/MainTabs/drivers/drivers';
 import { AddVehiclePage } from '../pages/Vehicles/add-vehicle/add-vehicle';
 import { AddDriversPage } from '../pages/Drivers/add-drivers/add-drivers';
+import { ProfilePage } from '../pages/Auths/profile/profile';
+import { LoginPage } from '../pages/Auths/login/login';
+import { BookingsPage } from '../pages/Bookings/bookings/bookings';
+import { AssignDriverPage } from '../pages/Bookings/assign-driver/assign-driver';
+import { DriverDetailsPage } from '../pages/Drivers/driver-details/driver-details';
+import { VehicleDetailsPage } from '../pages/Vehicles/vehicle-details/vehicle-details';
+import { DriverEditPage } from '../pages/Drivers/driver-edit/driver-edit';
+import { VehicleEditPage } from '../pages/Vehicles/vehicle-edit/vehicle-edit';
 
 
 export const firebaseCred = {
@@ -36,10 +44,17 @@ firebase.initializeApp(firebaseCred);
     DriversPage,
     AddVehiclePage,
     AddDriversPage,
+    ProfilePage,
+    LoginPage,
+    BookingsPage,
+    AssignDriverPage,
+    DriverDetailsPage,
+    VehicleDetailsPage,
+    DriverEditPage,
+    VehicleEditPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
     IonicModule.forRoot(MyApp, {
       scrollAssist: false
     }),
@@ -55,6 +70,14 @@ firebase.initializeApp(firebaseCred);
     DriversPage,
     AddVehiclePage,
     AddDriversPage,
+    ProfilePage,
+    LoginPage,
+    BookingsPage,
+    AssignDriverPage,
+    DriverDetailsPage,
+    VehicleDetailsPage,
+    DriverEditPage,
+    VehicleEditPage,
   ],
   providers: [
     StatusBar,

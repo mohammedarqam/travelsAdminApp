@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ProfilePage } from '../../Auths/profile/profile';
 
 
 @IonicPage()
 @Component({
-  selector: 'page-dashboard',
-  templateUrl: 'dashboard.html',
+  selector: 'page-vehicle-details',
+  templateUrl: 'vehicle-details.html',
 })
-export class DashboardPage {
+export class VehicleDetailsPage {
+
+  vehicle = this.navParams.get("vehicle")
 
   constructor(
   public navCtrl: NavController, 
   public navParams: NavParams
   ) {
+    console.log(this.vehicle);
   }
 
-  gtProfile(){
-    this.navCtrl.push(ProfilePage);
-  }
+
 }

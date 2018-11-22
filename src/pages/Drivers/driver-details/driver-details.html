@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Driver Details</ion-title>
+    <ion-buttons end>
+      <button ion-button clear (click)="edit()">Edit</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-content>
+
+
+      <ion-item>
+        <p ion-text color="primary" item-start>Driver Name </p>
+        <p item-end>{{driver.DriverName}} </p>
+      </ion-item>
+
+      <ion-item>
+        <p ion-text color="primary" item-start>Licence Number</p>
+        <p item-end>{{driver.LicenceNumber}} </p>
+      </ion-item>
+
+      <ion-item>
+        <p ion-text color="primary" item-start>Driver Number </p>
+        <p item-end>{{driver.Phone}} </p>
+      </ion-item>
+
+      <ion-item>
+        <p ion-text color="primary" item-start>Aadhar </p>
+        <p item-end>{{driver.Aadhar}} </p>
+      </ion-item>
+
+
+      <ion-item>
+        <p ion-text color="primary" item-start>Rating </p>
+        <p item-end>{{driver.Rating}} </p>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>
